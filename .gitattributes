@@ -1,0 +1,4 @@
+*.ogg filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+images/* !text !filter !merge !diff
+images/agni/skin1.jpg !text !filter !merge !diff

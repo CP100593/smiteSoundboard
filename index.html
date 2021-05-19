@@ -1,0 +1,1146 @@
+<!doctype html>
+<html lang="en">
+    <head>
+	<title>Smite Soundboard</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+	<div class="flexcolumn" id="left"></div>
+	<div class="flexcolumn" id="right"></div>
+	<div class="main">
+	    <div class="headerbar">
+		<h1>
+		    Smite Soundboard
+		</h1>
+				    </div>
+	    <div style="display:flex;">
+		<div style="margin: auto;">
+		    <img id="card" width=200px" height="100%">
+		</div>
+		<div style="flex-grow: 1;">
+		    <div class="tabbar">
+			<button id="talk" class="tabbutton">Talk/Emote</button>
+			<button id="attack" class="tabbutton">Attack/Defend</button>
+			<button id="gank" class="tabbutton">Gank/MIA</button>
+			<button id="ward" class="tabbutton">Ward/Ultimate</button>
+			<button id="ingame" class="tabbutton">In Game</button>
+		    </div>
+		    <div id="talktab" class="tab">
+                        <div class="overlay">
+			    <div class="lds-dual-ring"></div>
+			</div>
+			<dl>
+			    <dt>Greetings</dt>
+			    <dd id="vox_vgs_other_g_h" class="vgs">
+				<audio></audio>
+				Hi
+			    </dd>
+			    <dd id="vox_vgs_other_g_l" class="vgs">
+				<audio></audio>
+				Good Luck
+			    </dd>
+			    <dd id="vox_vgs_emote_f" class="vgs">
+				<audio></audio>
+				Have Fun
+			    </dd>
+			    <dd id="vox_vgs_other_g_b" class="vgs">
+				<audio></audio>
+				Bye
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Other</dt>
+			    <dd id="vox_vgs_other_s" class="vgs">
+				<audio></audio>
+				Sorry!
+			    </dd>
+			    <dd id="vox_vgs_other_g_g" class="vgs">
+				<audio></audio>
+				Good Game!
+			    </dd>
+			    <dd id="vox_vgs_other_g_o" class="vgs">
+				<audio></audio>
+				Oops!
+			    </dd>
+			    <dd id="vox_vgs_other_g_t" class="vgs">
+				<audio></audio>
+				That's too bad!
+			    </dd>
+			    <dd id="vox_vgs_nicejob" class="vgs">
+				<audio></audio>
+				Nice Job!
+			    </dd>
+			    <dd id="vox_vgs_cancel" class="vgs">
+				<audio></audio>
+				Cancel that!
+			    </dd>
+			    <dd id="vox_vgs_other_g_q" class="vgs">
+				<audio></audio>
+				Quiet!
+			    </dd>
+			    <dd id="vox_vgs_other_w" class="vgs">
+				<audio></audio>
+				Wait!
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Cheer</dt>
+			    <dd id="vox_vgs_emote_w" class="vgs">
+				<audio></audio>
+				Woohoo!
+			    </dd>
+			    <dd id="vox_vgs_emote_a" class="vgs">
+				<audio></audio>
+				Awesome!
+			    </dd>
+			    <dd id="vox_vgs_emote_r" class="vgs">
+				<audio></audio>
+				You Rock!
+			    </dd>
+			    <dd id="vox_vgs_emote_g" class="vgs">
+				<audio></audio>
+				I'm the Greatest!
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Response</dt>
+			    <dd id="vox_vgs_ok" class="vgs">
+				<audio></audio>
+				OK!
+			    </dd>
+			    <dd id="vox_vgs_emote_yes" class="vgs">
+				<audio></audio>
+				Yes!
+			    </dd>
+			    <dd id="vox_vgs_thanks" class="vgs">
+				<audio></audio>
+				Thanks!
+			    </dd>
+			    <dd id="vox_vgs_other_g_r" class="vgs">
+				<audio></audio>
+				No problem
+			    </dd>
+			    <dd id="vox_vgs_other_g_w" class="vgs">
+				<audio></audio>
+				You're Welcome!
+			    </dd>
+			    <dd id="vox_vgs_other_g_s" class="vgs">
+				<audio></audio>
+				Curses!
+			    </dd>
+			    <dd id="vox_vgs_retreat_s" class="vgs">
+				<audio></audio>
+				Save yourself!
+			    </dd>
+			    <dd id="vox_vgs_emote_no" class="vgs">
+				<audio></audio>
+				No!
+			    </dd>
+			    <dd id="vox_vgs_emote_please" class="vgs">
+				<audio></audio>
+				Please?
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Call Out</dt>
+			    <dd id="vox_vgs_other_v_a" class="vgs">
+				<audio></audio>
+				Set up an ambush here! 
+			    </dd>
+			    <dd id="vox_vgs_other_v_b" class="vgs">
+				<audio></audio>
+				Behind us! 
+			    </dd>
+			    <dd id="vox_vgs_other_v_c" class="vgs">
+				<audio></audio>
+				Chase the enemy! 
+			    </dd>
+			    <dd id="vox_vgs_other_v_x" class="vgs">
+				<audio></audio>
+				Spread Out! 
+			    </dd>
+			    <dd id="vox_vgs_other_v_s" class="vgs">
+				<audio></audio>
+				Stay Here! 
+			    </dd>
+			    <dd id="vox_vgs_other_v_f" class="vgs">
+				<audio></audio>
+				Follow Me!
+			    </dd>
+			    <dd id="vox_vgs_other_v_g" class="vgs">
+				<audio></audio>
+				Group up!
+			    </dd>
+			    <dd id="vox_vgs_help_s" class="vgs">
+				<audio></audio>
+				Need Healing!
+			    </dd>
+			    <dd id="vox_vgs_self_r" class="vgs">
+				<audio></audio>
+				Falling Back!
+			    </dd>
+			    <dd id="vox_vgs_other_v_p" class="vgs">
+				<audio></audio>
+				Split push!
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Info</dt>
+			    <dd id="vox_vgs_other_v_w" class="vgs">
+				<audio></audio>
+				On my way!
+			    </dd>
+			    <dd id="vox_vgs_brb" class="vgs">
+				<audio></audio>
+				Be right back!
+			    </dd>
+			    
+			    <dd id="vox_vgs_afk" class="vgs">
+				<audio></audio>
+				Stepping Away!
+			    </dd>
+			    <dd id="vox_vgs_completed" class="vgs">
+				<audio></audio>
+				Completed!
+			    </dd>
+			    <dd id="vox_vgs_self_o" class="vgs">
+				<audio></audio>
+				I'm on it!
+			    </dd>
+			    <dd id="vox_vgs_self_stacks" class="vgs">
+				<audio></audio>
+				I'm building Stacks!
+			    </dd>
+			    <dd id="vox_vgs_other_g_m" class="vgs">
+				<audio></audio>
+				Out of mana!
+			    </dd>
+			    <dd id="vox_vgs_other_v_j" class="vgs">
+				<audio></audio>
+				Going into the jungle!
+			    </dd>
+			    <dd id="vox_vgs_other_v_t" class="vgs">
+				<audio></audio>
+				Its a trap!
+			    </dd>
+			</dl>
+		    </div>
+		    <div id="attacktab" class="tab" style="display: none;">
+			<div class="overlay">
+			    <div class="lds-dual-ring"></div>
+			</div>
+			<dl>
+			    <dt>Attack</dt>
+			    <dd id="vox_vgs_attack_a" class="vgs">
+				<audio></audio>
+				Attack!
+			    </dd>
+			    <dd id="vox_vgs_attack_1" class="vgs">
+				<audio></audio>
+				Attack left lane!
+			    </dd>
+			    <dd id="vox_vgs_attack_2" class="vgs">
+				<audio></audio>
+				Attack middle lane!
+			    </dd>
+			    <dd id="vox_vgs_attack_3" class="vgs">
+				<audio></audio>
+				Attack right lane!
+			    </dd>
+			    <dd id="vox_vgs_attack_t" class="vgs">
+				<audio></audio>
+				Attack the Titan!
+			    </dd>
+			    <dd id="vox_vgs_attack_g" class="vgs">
+				<audio></audio>
+				Attack the Gold Fury!
+			    </dd>
+			    <dd id="vox_vgs_attack_f" class="vgs">
+				<audio></audio>
+				Attack the Fire Giant!
+			    </dd>
+			    <dd id="vox_vgs_arena_m" class="vgs">
+				<audio></audio>
+				Attack the Minions!
+			    </dd>
+			    <dd>
+				<dl>
+				    <dt>Self</dt>
+				    <dd id="vox_vgs_self_attack" class="vgs">
+					<audio></audio>
+					I'll attack!
+				    </dd>
+				    <dd id="vox_vgs_self_attack_1" class="vgs">
+					<audio></audio>
+					I'll attack left lane!
+				    </dd>
+				    <dd id="vox_vgs_self_attack_2" class="vgs">
+					<audio></audio>
+					I'll attack middle lane!
+				    </dd>
+				    <dd id="vox_vgs_self_attack_3" class="vgs">
+					<audio></audio>
+					I'll attack right lane!
+				    </dd>
+				    <dd id="vox_vgs_self_attack_t" class="vgs">
+					<audio></audio>
+					I'll attack the Titan!
+				    </dd>
+				    <dd id="vox_vgs_self_attack_g" class="vgs">
+					<audio></audio>
+					I'll attack the Gold Fury!
+				    </dd>
+				    <dd id="vox_vgs_self_attack_f" class="vgs">
+					<audio></audio>
+					I'll attack the Fire Giant!
+				    </dd>
+				</dl>
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Tower</dt>
+			    <dd id="vox_vgs_tower_1" class="vgs">
+				<audio></audio>
+				Attack left tower!
+			    </dd>
+			    <dd id="vox_vgs_tower_2" class="vgs">
+				<audio></audio>
+				Attack middle tower!
+			    </dd>
+			    <dd id="vox_vgs_tower_3" class="vgs">
+				<audio></audio>
+				Attack right tower!
+			    </dd>
+			    <dd id="vox_vgs_phoenix_1" class="vgs">
+				<audio></audio>
+				Attack left phoenix!
+			    </dd>
+			    <dd id="vox_vgs_phoenix_2" class="vgs">
+				<audio></audio>
+				Attack middle phoenix!
+			    </dd>
+			    <dd id="vox_vgs_phoenix_3" class="vgs">
+				<audio></audio>
+				Attack right phoenix!
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Retreat</dt>
+			    <dd id="vox_vgs_retreat_1" class="vgs">
+				<audio></audio>
+				Retreat left lane!
+			    </dd>
+			    <dd id="vox_vgs_retreat_2" class="vgs">
+				<audio></audio>
+				Retreat middle lane!
+			    </dd>
+			    <dd id="vox_vgs_retreat_3" class="vgs">
+				<audio></audio>
+				Retreat right lane!
+			    </dd>
+			    <dd id="vox_vgs_retreat_j" class="vgs">
+				<audio></audio>
+				Retreat from the Jungle!
+			    </dd>
+			    <dd id="vox_vgs_retreat_r" class="vgs">
+				<audio></audio>
+				Retreat!
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Defend</dt>
+			    <dd id="vox_vgs_defend_d" class="vgs">
+				<audio></audio>
+				Defend!
+			    </dd>
+			    <dd id="vox_vgs_defend_1" class="vgs">
+				<audio></audio>
+				Defend left lane!
+			    </dd>
+			    <dd id="vox_vgs_defend_2" class="vgs">
+				<audio></audio>
+				Defend middle lane!
+			    </dd>
+			    <dd id="vox_vgs_defend_3" class="vgs">
+				<audio></audio>
+				Defend right lane!
+			    </dd>
+			    <dd id="vox_vgs_defend_t" class="vgs">
+				<audio></audio>
+				Defend the Titan!
+			    </dd>
+			    <dd id="vox_vgs_defend_g" class="vgs">
+				<audio></audio>
+				Defend the Gold Fury!
+			    </dd>
+			    <dd id="vox_vgs_defend_f" class="vgs">
+				<audio></audio>
+				Defend the Fire Giant!
+			    </dd>
+			    <dd id="vox_vgs_arena_p" class="vgs">
+				<audio></audio>
+				Defend the Portal!
+			    </dd>
+			    <dd>
+				<dl>
+				    <dt>Self</dt>
+				    <dd id="vox_vgs_self_defend" class="vgs">
+					<audio></audio>
+					I'll defend!
+				    </dd>
+				    <dd id="vox_vgs_self_defend_1" class="vgs">
+					<audio></audio>
+					I'll defend left lane!
+				    </dd>
+				    <dd id="vox_vgs_self_defend_2" class="vgs">
+					<audio></audio>
+					I'll defend middle lane!
+				    </dd>
+				    <dd id="vox_vgs_self_defend_3" class="vgs">
+					<audio></audio>
+					I'll defend right lane!
+				    </dd>
+				    <dd id="vox_vgs_self_defend_t" class="vgs">
+					<audio></audio>
+					I'll defend the Titan!
+				    </dd>
+				    <dd id="vox_vgs_self_defend_g" class="vgs">
+					<audio></audio>
+					I'll defend the Gold Fury!
+				    </dd>
+				    <dd id="vox_vgs_self_defend_f" class="vgs">
+					<audio></audio>
+					I'll defend the Fire Giant!
+				    </dd>
+				</dl>
+			    </dd>
+			</dl>
+		    </div>
+		    <div id="ganktab" class="tab" style="display: none;">
+			<div class="overlay">
+			    <div class="lds-dual-ring"></div>
+			</div>
+			<dl>
+			    <dt>Gank</dt>
+			    <dd id="vox_vgs_gank_1" class="vgs">
+				<audio></audio>
+				Gank left lane!
+			    </dd>
+			    <dd id="vox_vgs_gank_2" class="vgs">
+				<audio></audio>
+				Gank middle lane!
+			    </dd>
+			    <dd id="vox_vgs_gank_3" class="vgs">
+				<audio></audio>
+				Gank right lane!
+			    </dd>
+			    <dd id="vox_vgs_gank_g" class="vgs">
+				<audio></audio>
+				Gank!
+			    </dd>
+			    <dd>
+				<dl>
+				    <dt>Self</dt>
+				    <dd id="vox_vgs_self_gank_1" class="vgs">
+					<audio></audio>
+					I'll Gank left lane!
+				    </dd>
+				    <dd id="vox_vgs_self_gank_2" class="vgs">
+					<audio></audio>
+					I'll Gank middle lane!
+				    </dd>
+				    <dd id="vox_vgs_self_gank_3" class="vgs">
+					<audio></audio>
+					I'll Gank right lane!
+				    </dd>
+				    <dd id="vox_vgs_self_gank" class="vgs">
+					<audio></audio>
+					I'll Gank!
+				    </dd>
+				</dl>
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>MIA</dt>
+			    <dd id="vox_vgs_mia_1" class="vgs">
+				<audio></audio>
+				Enemy missing left!
+			    </dd>
+			    <dd id="vox_vgs_mia_2" class="vgs">
+				<audio></audio>
+				Enemy missing middle!
+			    </dd>
+			    <dd id="vox_vgs_mia_3" class="vgs">
+				<audio></audio>
+				Enemy missing right!
+			    </dd>
+			    <dd id="vox_vgs_mia_m" class="vgs">
+				<audio></audio>
+				Enemy missing!
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Returned</dt>
+			    <dd id="vox_vgs_returned_1" class="vgs">
+				<audio></audio>
+				Enemies have returned left!
+			    </dd>
+			    <dd id="vox_vgs_returned_2" class="vgs">
+				<audio></audio>
+				Enemies have returned middle!
+			    </dd>
+			    <dd id="vox_vgs_returned_3" class="vgs">
+				<audio></audio>
+				Enemies have returned right!
+			    </dd>
+			    <dd id="vox_vgs_returned_e" class="vgs">
+				<audio></audio>
+				Enemies have returned!
+			    </dd>
+			    <dd>
+				<dl>
+				    <dt>Self</dt>
+				    <dd id="vox_vgs_self_returned" class="vgs">
+					<audio></audio>
+					I have returned!
+				    </dd>
+				    <dd id="vox_vgs_self_returned_1" class="vgs">
+					<audio></audio>
+					I'm returning left lane!
+				    </dd>
+				    <dd id="vox_vgs_self_returned_2" class="vgs">
+					<audio></audio>
+					I'm returning middle lane!
+				    </dd>
+				    <dd id="vox_vgs_self_returned_3" class="vgs">
+					<audio></audio>
+					I'm returning right lane!
+				    </dd>
+				    <dd id="vox_vgs_self_returned_b" class="vgs">
+					<audio></audio>
+					I'm returning to base!
+				    </dd>
+				</dl>
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Incoming</dt>
+			    <dd id="vox_vgs_incoming_1" class="vgs">
+				<audio></audio>
+				Enemies incoming left!
+			    </dd>
+			    <dd id="vox_vgs_incoming_2" class="vgs">
+				<audio></audio>
+				Enemies incoming middle!
+			    </dd>
+			    <dd id="vox_vgs_incoming_3" class="vgs">
+				<audio></audio>
+				Enemies incoming right!
+			    </dd>
+			    <dd id="vox_vgs_incoming_i" class="vgs">
+				<audio></audio>
+				Enemies incoming!
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Enemy</dt>
+			    <dd id="vox_vgs_enemy_1" class="vgs">
+				<audio></audio>
+				Enemies in left lane!
+			    </dd>
+			    <dd id="vox_vgs_enemy_2" class="vgs">
+				<audio></audio>
+				Enemies in middle lane!
+			    </dd>
+			    <dd id="vox_vgs_enemy_3" class="vgs">
+				<audio></audio>
+				Enemies in right lane!
+			    </dd>
+			    <dd id="vox_vgs_enemy_s" class="vgs">
+				<audio></audio>
+				Enemy Spotted!
+			    </dd>
+			    <dd id="vox_vgs_enemy_b" class="vgs">
+				<audio></audio>
+				Enemies have returned to base!
+			    </dd>
+			    <dd id="vox_vgs_enemy_j" class="vgs">
+				<audio></audio>
+				Enemies in the jungle!
+			    </dd>
+			    <dd id="vox_vgs_enemy_jungle_1" class="vgs">
+				<audio></audio>
+				Enemies in the left jungle!
+			    </dd>
+			    <dd id="vox_vgs_enemy_jungle_2" class="vgs">
+				<audio></audio>
+				Enemies in the right jungle!
+			    </dd>
+			    <dd id="vox_vgs_enemy_e" class="vgs">
+				<audio></audio>
+				Enemies behind us!
+			    </dd>
+			    <dd id="vox_vgs_enemy_g" class="vgs">
+				<audio></audio>
+				Enemies at the Gold Fury!
+			    </dd>
+			    <dd id="vox_vgs_enemy_f" class="vgs">
+				<audio></audio>
+				Enemies at the Fire Giant!
+			    </dd>
+			    <dd id="vox_vgs_enemy_t" class="vgs">
+				<audio></audio>
+				Enemies at our Titan!
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Help</dt>
+			    <dd id="vox_vgs_help_1" class="vgs">
+				<audio></audio>
+				Help left lane!
+			    </dd>
+			    <dd id="vox_vgs_help_2" class="vgs">
+				<audio></audio>
+				Help middle lane!
+			    </dd>
+			    <dd id="vox_vgs_help_3" class="vgs">
+				<audio></audio>
+				Help right lane!
+			    </dd>
+			    <dd id="vox_vgs_help" class="vgs">
+				<audio></audio>
+				Help!
+			    </dd>
+			</dl>
+		    </div>
+		    <div id="wardtab" class="tab" style="display: none;">
+			<div class="overlay">
+			    <div class="lds-dual-ring"></div>
+			</div>
+			<dl>
+			    <dt>Ward</dt>
+			    <dd id="vox_vgs_ward" class="vgs">
+				<audio></audio>
+				Ward here!
+			    </dd>
+			    <dd id="vox_vgs_ward_1" class="vgs">
+				<audio></audio>
+				Ward left!
+			    </dd>
+			    <dd id="vox_vgs_ward_2" class="vgs">
+				<audio></audio>
+				Ward middle!
+			    </dd>
+			    <dd id="vox_vgs_ward_3" class="vgs">
+				<audio></audio>
+				Ward right!
+			    </dd>
+			    <dd id="vox_vgs_ward_t" class="vgs">
+				<audio></audio>
+				Place a ward for teleport!
+			    </dd>
+			    <dd id="vox_vgs_ward_g" class="vgs">
+				<audio></audio>
+				Ward the Gold Fury!
+			    </dd>
+			    <dd id="vox_vgs_ward_f" class="vgs">
+				<audio></audio>
+				Ward the Fire Giant!
+			    </dd>
+			    <dd id="vox_vgs_ward_n" class="vgs">
+				<audio></audio>
+				We need wards!
+			    </dd>
+			    <dd>
+				<dl>
+				    <dt>Self</dt>
+				    <dd id="vox_vgs_self_ward" class="vgs">
+					<audio></audio>
+					I will ward!
+				    </dd>
+				    <dd id="vox_vgs_self_ward_1" class="vgs">
+					<audio></audio>
+					I will ward left!
+				    </dd>
+				    <dd id="vox_vgs_self_ward_2" class="vgs">
+					<audio></audio>
+					I will ward middle!
+				    </dd>
+				    <dd id="vox_vgs_self_ward_3" class="vgs">
+					<audio></audio>
+					I will ward right!
+				    </dd>
+				</dl>
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Careful</dt>
+			    <dd id="vox_vgs_careful_1" class="vgs">
+				<audio></audio>
+				Be careful left!
+			    </dd>
+			    <dd id="vox_vgs_careful_2" class="vgs">
+				<audio></audio>
+				Be careful middle!
+			    </dd>
+			    <dd id="vox_vgs_careful_3" class="vgs">
+				<audio></audio>
+				Be careful right!
+			    </dd>
+			    <dd id="vox_vgs_careful_c" class="vgs">
+				<audio></audio>
+				Be careful!
+			    </dd>
+			    <dd id="vox_vgs_careful_j" class="vgs">
+				<audio></audio>
+				Be careful in the jungle!
+			    </dd>
+			    <dd id="vox_vgs_careful_b" class="vgs">
+				<audio></audio>
+				Return to base!
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Ultimate</dt>
+			    <dd id="vox_vgs_other_v_r" class="vgs">
+				<audio></audio>
+				Ultimate is ready!
+			    </dd>
+			    <dd id="vox_vgs_other_v_d" class="vgs">
+				<audio></audio>
+				Ultimate is down!
+			    </dd>
+			    <dd id="vox_vgs_ultimate_enemy_a" class="vgs">
+				<audio></audio>
+				Enemy ultimate incoming!
+			    </dd>
+			    <dd id="vox_vgs_ultimate_enemy_d" class="vgs">
+				<audio></audio>
+				Enemy ultimate down!
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Buff</dt>
+			    <dd id="vox_vgs_self_b" class="vgs">
+				<audio></audio>
+				I'm going for jungle buff!
+			    </dd>
+			    <dd id="vox_vgs_jungle_buff_c" class="vgs">
+				<audio></audio>
+				Take this jungle buff!
+			    </dd>
+			    <dd id="vox_vgs_jungle_buff_n" class="vgs">
+				<audio></audio>
+				I need the jungle buff!
+			    </dd>
+			</dl>
+		    </div>
+		    <div id="ingametab" class="tab" style="display: none;">
+			<div class="overlay">
+			    <div class="lds-dual-ring"></div>
+			</div>
+			<dl>
+			    <dt>Abilites</dt>
+			    <dd id="ability_1a" class="vgs">
+				<audio></audio>
+				Ability 1 A
+			    </dd>
+			    <dd id="ability_1b" class="vgs">
+				<audio></audio>
+				Ability 1 B
+			    </dd>
+			    <dd id="ability_1c" class="vgs">
+				<audio></audio>
+				Ability 1 C
+			    </dd>
+			    <dd id="ability_1d" class="vgs">
+				<audio></audio>
+				Ability 1 D
+			    </dd>
+			    <dd id="ability_1e" class="vgs">
+				<audio></audio>
+				Ability 1 E
+			    </dd>
+			    <dd id="ability_1f" class="vgs">
+				<audio></audio>
+				Ability 1 F
+			    </dd>
+			    <dd id="ability_1g" class="vgs">
+				<audio></audio>
+				Ability 1 G
+			    </dd>
+			    <dd id="ability_1h" class="vgs">
+				<audio></audio>
+				Ability 1 H
+			    </dd>
+			    <dd id="ability_1a_1" class="vgs">
+				<audio></audio>
+				Ability 1 A i
+			    </dd>
+			    <dd id="ability_1a_2" class="vgs">
+				<audio></audio>
+				Ability 1 A ii
+			    </dd>
+			    <dd id="ability_1b_1" class="vgs">
+				<audio></audio>
+				Ability 1 B i
+			    </dd>
+			    <dd id="ability_1b_2" class="vgs">
+				<audio></audio>
+				Ability 1 B ii
+			    </dd>
+			    <dd id="ability_2a" class="vgs">
+				<audio></audio>
+				Ability 2 A
+			    </dd>
+			    <dd id="ability_2b" class="vgs">
+				<audio></audio>
+				Ability 2 B
+			    </dd>
+			    <dd id="ability_2c" class="vgs">
+				<audio></audio>
+				Ability 2 C
+			    </dd>
+			    <dd id="ability_2d" class="vgs">
+				<audio></audio>
+				Ability 2 D
+			    </dd>
+			    <dd id="ability_2e" class="vgs">
+				<audio></audio>
+				Ability 2 E
+			    </dd>
+			    <dd id="ability_2f" class="vgs">
+				<audio></audio>
+				Ability 2 F
+			    </dd>
+			    <dd id="ability_2g" class="vgs">
+				<audio></audio>
+				Ability 2 G
+			    </dd>
+			    <dd id="ability_2h" class="vgs">
+				<audio></audio>
+				Ability 2 H
+			    </dd>
+			    <dd id="ability_2a_1" class="vgs">
+				<audio></audio>
+				Ability 2 A i
+			    </dd>
+			    <dd id="ability_2a_2" class="vgs">
+				<audio></audio>
+				Ability 2 A ii
+			    </dd>
+			    <dd id="ability_2b_1" class="vgs">
+				<audio></audio>
+				Ability 2 B i
+			    </dd>
+			    <dd id="ability_2b_2" class="vgs">
+				<audio></audio>
+				Ability 2 B ii
+			    </dd>
+			    <dd id="ability_3a" class="vgs">
+				<audio></audio>
+				Ability 3 A
+			    </dd>
+			    <dd id="ability_3b" class="vgs">
+				<audio></audio>
+				Ability 3 B
+			    </dd>
+			    <dd id="ability_3c" class="vgs">
+				<audio></audio>
+				Ability 3 C
+			    </dd>
+			    <dd id="ability_3d" class="vgs">
+				<audio></audio>
+				Ability 3 D
+			    </dd>
+			    <dd id="ability_3e" class="vgs">
+				<audio></audio>
+				Ability 3 E
+			    </dd>
+			    <dd id="ability_3f" class="vgs">
+				<audio></audio>
+				Ability 3 F
+			    </dd>
+			    <dd id="ability_3g" class="vgs">
+				<audio></audio>
+				Ability 3 G
+			    </dd>
+			    <dd id="ability_3h" class="vgs">
+				<audio></audio>
+				Ability 3 H
+			    </dd>
+			    <dd id="ability_3a_1" class="vgs">
+				<audio></audio>
+				Ability 3 A i
+			    </dd>
+			    <dd id="ability_3a_2" class="vgs">
+				<audio></audio>
+				Ability 3 A ii
+			    </dd>
+			    <dd id="ability_3b_1" class="vgs">
+				<audio></audio>
+				Ability 3 B i
+			    </dd>
+			    <dd id="ability_3b_2" class="vgs">
+				<audio></audio>
+				Ability 3 B ii
+			    </dd>
+			    <dd id="ability_4a" class="vgs">
+				<audio></audio>
+				Ability 4 A
+			    </dd>
+			    <dd id="ability_4b" class="vgs">
+				<audio></audio>
+				Ability 4 B
+			    </dd>
+			    <dd id="ability_4c" class="vgs">
+				<audio></audio>
+				Ability 4 C
+			    </dd>
+			    <dd id="ability_4d" class="vgs">
+				<audio></audio>
+				Ability 4 D
+			    </dd>
+			    <dd id="ability_4e" class="vgs">
+				<audio></audio>
+				Ability 4 E
+			    </dd>
+			    <dd id="ability_4f" class="vgs">
+				<audio></audio>
+				Ability 4 F
+			    </dd>
+			    <dd id="ability_4g" class="vgs">
+				<audio></audio>
+				Ability 4 G
+			    </dd>
+			    <dd id="ability_4h" class="vgs">
+				<audio></audio>
+				Ability 4 H
+			    </dd>
+			    <dd id="ability_4a_1" class="vgs">
+				<audio></audio>
+				Ability 4 A i
+			    </dd>
+			    <dd id="ability_4a_2" class="vgs">
+				<audio></audio>
+				Ability 4 A ii
+			    </dd>
+			    <dd id="ability_4b_1" class="vgs">
+				<audio></audio>
+				Ability 4 B i
+			    </dd>
+			    <dd id="ability_4b_2" class="vgs">
+				<audio></audio>
+				Ability 4 B ii
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Passive</dt>
+			    <dd id="passive_1a" class="vgs">
+				<audio></audio>
+				Passive 1 A
+			    </dd>
+			    <dd id="passive_1b" class="vgs">
+				<audio></audio>
+				Passive 1 B
+			    </dd>
+			    <dd id="passive_2a" class="vgs">
+				<audio></audio>
+				Passive 2 A
+			    </dd>
+			    <dd id="passive_2b" class="vgs">
+				<audio></audio>
+				Passive 2 B
+			    </dd>
+			    <dd id="ability_passive_1a" class="vgs">
+				<audio></audio>
+				Passive 1 A
+			    </dd>
+			    <dd id="ability_passive_1b" class="vgs">
+				<audio></audio>
+				Passive 1 B
+			    </dd>
+			    <dd id="ability_passive_1c" class="vgs">
+				<audio></audio>
+				Passive 1 C
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Death</dt>
+			    <dd id="death_1" class="vgs">
+				<audio></audio>
+				Death 1
+			    </dd>
+			    <dd id="death_2" class="vgs">
+				<audio></audio>
+				Death 2
+			    </dd>
+			    <dd id="health_low_1" class="vgs">
+				<audio></audio>
+				Health Low 1
+			    </dd>
+			    <dd id="health_low_2" class="vgs">
+				<audio></audio>
+				Health Low 2
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Laughs</dt>
+			    <dd id="laugh_1" class="vgs">
+				<audio></audio>
+				Laugh 1
+			    </dd>
+			    <dd id="laugh_2" class="vgs">
+				<audio></audio>
+				Laugh 2
+			    </dd>
+			    <dd id="laugh_3" class="vgs">
+				<audio></audio>
+				Laugh 3
+			    </dd>
+			    <dd id="laugh_4" class="vgs">
+				<audio></audio>
+				Laugh 4
+			    </dd>
+			    <dd id="laugh_5" class="vgs">
+				<audio></audio>
+				Laugh 5
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Intro</dt>
+			    <dd id="intro_1" class="vgs">
+				<audio></audio>
+				Intro 1
+			    </dd>
+			    <dd id="intro_2" class="vgs">
+				<audio></audio>
+				Intro 2
+			    </dd>
+			    <dd id="select" class="vgs">
+				<audio></audio>
+				God Select
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Jokes</dt>
+			    <dd id="joke_1" class="vgs">
+				<audio></audio>
+				Joke 1
+			    </dd>
+			    <dd id="joke_2" class="vgs">
+				<audio></audio>
+				Joke 2
+			    </dd>
+			    <dd id="joke_3" class="vgs">
+				<audio></audio>
+				Joke 3
+			    </dd>
+			    <dd id="joke_4" class="vgs">
+				<audio></audio>
+				Joke 4
+			    </dd>
+			    <dd id="joke_5" class="vgs">
+				<audio></audio>
+				Joke 5
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Taunts</dt>
+			    <dd id="taunt_1" class="vgs">
+				<audio></audio>
+				Taunt 1
+			    </dd>
+			    <dd id="taunt_2" class="vgs">
+				<audio></audio>
+				Taunt 2
+			    </dd>
+			    <dd id="taunt_3" class="vgs">
+				<audio></audio>
+				Taunt 3
+			    </dd>
+			    <dd id="taunt_4" class="vgs">
+				<audio></audio>
+				Taunt 4
+			    </dd>
+			    <dd id="taunt_5" class="vgs">
+				<audio></audio>
+				Taunt 5
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Kills</dt>
+			    <dd id="kill_streak_1" class="vgs">
+				<audio></audio>
+				Killstreak 1
+			    </dd>
+			    <dd id="kill_streak_2" class="vgs">
+				<audio></audio>
+				Killstreak 2
+			    </dd>
+			    <dd id="kill_tower_1" class="vgs">
+				<audio></audio>
+				Tower kill 1
+			    </dd>
+			    <dd id="kill_tower_2" class="vgs">
+				<audio></audio>
+				Tower kill 2
+			    </dd>
+			    <dd id="kill_jungleboss_1" class="vgs">
+				<audio></audio>
+				Jungle boss kill 1
+			    </dd>
+			    <dd id="kill_jungleboss_2" class="vgs">
+				<audio></audio>
+				Jungle boss kill 2
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Purchases</dt>
+			    <dd id="purchase_consumable_1" class="vgs">
+				<audio></audio>
+				Purchase Consumable 1
+			    </dd>
+			    <dd id="purchase_consumable_2" class="vgs">
+				<audio></audio>
+				Purchase Consumable 2
+			    </dd>
+			    <dd id="purchase_recommended_1" class="vgs">
+				<audio></audio>
+				Purchase Recommended 1
+			    </dd>
+			    <dd id="purchase_recommended_2" class="vgs">
+				<audio></audio>
+				Purchase Recommended 2
+			    </dd>
+			    <dd id="purchase_notrecommended_1" class="vgs">
+				<audio></audio>
+				Purchase Not Recommended 1
+			    </dd>
+			    <dd id="purchase_notrecommended_2" class="vgs">
+				<audio></audio>
+				Purchase Not Recommended 2
+			    </dd>
+			</dl>
+			<dl>
+			    <dt>Ward Placed</dt>
+			    <dd id="ward_placed_1" class="vgs">
+				<audio></audio>
+				Ward Placed 1
+			    </dd>
+			    <dd id="ward_placed_2" class="vgs">
+				<audio></audio>
+				Ward Placed 2
+			    </dd>
+			</dl>
+			<dl id="tauntlist">
+			    <dt>Direct Taunts</dt>
+			</dl>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<script type="module" src="soundboard.js"></script>
+    </body>
+</html>
